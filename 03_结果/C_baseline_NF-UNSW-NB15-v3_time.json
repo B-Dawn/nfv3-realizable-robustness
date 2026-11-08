@@ -1,0 +1,8 @@
+{
+  "src": "NF-UNSW-NB15-v3",
+  "split": "time",
+  "n_train": 300000,
+  "n_val": 157500,
+  "seed": 0,
+  "seconds": 69.6
+}

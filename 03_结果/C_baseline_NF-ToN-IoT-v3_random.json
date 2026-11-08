@@ -1,0 +1,8 @@
+{
+  "src": "NF-ToN-IoT-v3",
+  "split": "random",
+  "n_train": 300000,
+  "n_val": 157503,
+  "seed": 0,
+  "seconds": 121.7
+}

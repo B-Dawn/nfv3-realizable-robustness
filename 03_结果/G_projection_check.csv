@@ -1,0 +1,40 @@
+﻿数据集,检验,通过,说明
+NF-UNSW-NB15-v3,"T1 恒等 P(x,x)=x（LOOSE）",True,不相等元素 0
+NF-UNSW-NB15-v3,"T1 恒等 P(x,x)=x（STRICT）",True,不相等元素 0
+NF-UNSW-NB15-v3,T2 原流违反率 0%,True,0.0000% {}
+NF-UNSW-NB15-v3,T3 随机动作违反率 0%（STRICT）,True,0.0000% {}
+NF-UNSW-NB15-v3,T5 不可改特征不变（STRICT）,True,
+NF-UNSW-NB15-v3,T6 只增特征不减少（STRICT）,True,
+NF-UNSW-NB15-v3,T4 随机扰动投影后违反率 0%（STRICT）,True,投影前 100.00% → 投影后 0.0000% {}
+NF-UNSW-NB15-v3,T6 投影后只增特征不减少（STRICT）,True,
+NF-UNSW-NB15-v3,T3 随机动作违反率 0%（LOOSE）,True,0.0000% {}
+NF-UNSW-NB15-v3,T5 不可改特征不变（LOOSE）,True,
+NF-UNSW-NB15-v3,T6 只增特征不减少（LOOSE）,True,
+NF-UNSW-NB15-v3,T4 随机扰动投影后违反率 0%（LOOSE）,True,投影前 100.00% → 投影后 0.0000% {}
+NF-UNSW-NB15-v3,T6 投影后只增特征不减少（LOOSE）,True,
+NF-CSE-CIC-IDS2018-v3,"T1 恒等 P(x,x)=x（LOOSE）",True,不相等元素 0
+NF-CSE-CIC-IDS2018-v3,"T1 恒等 P(x,x)=x（STRICT）",True,不相等元素 0
+NF-CSE-CIC-IDS2018-v3,T2 原流违反率 0%,True,0.0000% {}
+NF-CSE-CIC-IDS2018-v3,T3 随机动作违反率 0%（STRICT）,True,0.0000% {}
+NF-CSE-CIC-IDS2018-v3,T5 不可改特征不变（STRICT）,True,
+NF-CSE-CIC-IDS2018-v3,T6 只增特征不减少（STRICT）,True,
+NF-CSE-CIC-IDS2018-v3,T4 随机扰动投影后违反率 0%（STRICT）,True,投影前 100.00% → 投影后 0.0000% {}
+NF-CSE-CIC-IDS2018-v3,T6 投影后只增特征不减少（STRICT）,True,
+NF-CSE-CIC-IDS2018-v3,T3 随机动作违反率 0%（LOOSE）,True,0.0000% {}
+NF-CSE-CIC-IDS2018-v3,T5 不可改特征不变（LOOSE）,True,
+NF-CSE-CIC-IDS2018-v3,T6 只增特征不减少（LOOSE）,True,
+NF-CSE-CIC-IDS2018-v3,T4 随机扰动投影后违反率 0%（LOOSE）,True,投影前 100.00% → 投影后 0.0000% {}
+NF-CSE-CIC-IDS2018-v3,T6 投影后只增特征不减少（LOOSE）,True,
+NF-ToN-IoT-v3,"T1 恒等 P(x,x)=x（LOOSE）",True,不相等元素 0
+NF-ToN-IoT-v3,"T1 恒等 P(x,x)=x（STRICT）",True,不相等元素 0
+NF-ToN-IoT-v3,T2 原流违反率 0%,True,0.0000% {}
+NF-ToN-IoT-v3,T3 随机动作违反率 0%（STRICT）,True,0.0000% {}
+NF-ToN-IoT-v3,T5 不可改特征不变（STRICT）,True,
+NF-ToN-IoT-v3,T6 只增特征不减少（STRICT）,True,
+NF-ToN-IoT-v3,T4 随机扰动投影后违反率 0%（STRICT）,True,投影前 100.00% → 投影后 0.0000% {}
+NF-ToN-IoT-v3,T6 投影后只增特征不减少（STRICT）,True,
+NF-ToN-IoT-v3,T3 随机动作违反率 0%（LOOSE）,True,0.0000% {}
+NF-ToN-IoT-v3,T5 不可改特征不变（LOOSE）,True,
+NF-ToN-IoT-v3,T6 只增特征不减少（LOOSE）,True,
+NF-ToN-IoT-v3,T4 随机扰动投影后违反率 0%（LOOSE）,True,投影前 100.00% → 投影后 0.0000% {}
+NF-ToN-IoT-v3,T6 投影后只增特征不减少（LOOSE）,True,

@@ -1,0 +1,8 @@
+{
+  "src": "NF-UNSW-NB15-v3",
+  "split": "random",
+  "n_train": 300000,
+  "n_val": 157501,
+  "seed": 0,
+  "seconds": 74.7
+}

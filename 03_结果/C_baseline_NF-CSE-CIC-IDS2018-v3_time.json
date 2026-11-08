@@ -1,0 +1,8 @@
+{
+  "src": "NF-CSE-CIC-IDS2018-v3",
+  "split": "time",
+  "n_train": 300000,
+  "n_val": 157501,
+  "seed": 0,
+  "seconds": 71.6
+}
