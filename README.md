@@ -2,7 +2,7 @@
 
 Code and result summaries for the paper
 *Realizable Adversarial Robustness of NetFlow Intrusion Detectors: Constraints, Leakage, and Operating Points*
-(Nanlei Chen, Xiaoyu Ke, Yifan Hui, Xuyan Lu, Huangze Fang, Qiulong Lin; under submission).
+(Nanlei Chen, Xiaoyu Ke, Yifan Hui, Huangze Fang, Xuyan Lu, Qiulong Lin; under submission).
 
 The repository evaluates flow-based intrusion detectors (Random Forest, XGBoost, MLP) on three NetFlow v3 datasets under
 attacks that an attacker can actually realize, and compares augmentation-based defenses.
