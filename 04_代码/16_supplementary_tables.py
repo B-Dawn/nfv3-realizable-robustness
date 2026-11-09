@@ -299,7 +299,7 @@ doc = r"""\documentclass[journal,onecolumn]{IEEEtran}
 \renewcommand{\thesection}{S\arabic{section}}
 \renewcommand{\thetable}{S\arabic{table}}
 \begin{document}
-\title{Supplementary Material for\\ ``Realizable Adversarial Robustness of NetFlow Intrusion Detectors: Constraints, Leakage, and Operating Points''}
+\title{Supplementary Material for\\ ``Realizable Evasion of NetFlow Intrusion Detectors in Network Operations: Constraints, Leakage, and Operating Points''}
 \author{Nanlei~Chen, Xiaoyu~Ke, Yifan~Hui, Huangze~Fang, Xuyan~Lu, and~Qiulong~Lin}
 \maketitle
 \sloppy

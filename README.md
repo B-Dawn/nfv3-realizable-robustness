@@ -1,7 +1,7 @@
-# Realizable Adversarial Robustness of NetFlow Intrusion Detectors
+# Realizable Evasion of NetFlow Intrusion Detectors in Network Operations
 
 Code and result summaries for the paper
-*Realizable Adversarial Robustness of NetFlow Intrusion Detectors: Constraints, Leakage, and Operating Points*
+*Realizable Evasion of NetFlow Intrusion Detectors in Network Operations: Constraints, Leakage, and Operating Points*
 (Nanlei Chen, Xiaoyu Ke, Yifan Hui, Huangze Fang, Xuyan Lu, Qiulong Lin; under submission).
 
 The repository evaluates flow-based intrusion detectors (Random Forest, XGBoost, MLP) on three NetFlow v3 datasets under
@@ -28,6 +28,8 @@ Run all scripts from the repository root, in this order. Each script documents i
 | 7 | `04_代码/10_ablation.py actions <dataset> --seed s` | Action ablation (TTL / window / flags) |
 | 8 | `04_代码/14_adv_training.py <dataset> --seed s` | Defenses D0, D1, D1′, D2, D3 |
 | 9 | `04_代码/13_aggregate.py`, `04_代码/15_aggregate_at.py` | Mean ± std over seeds |
+| 10 | `04_代码/18_ack_sensitivity.py <dataset> --seed s --ratio r`, `04_代码/19_aggregate_ack.py` | Sensitivity to server acknowledgments (ratio 0 reproduces step 5) |
+| 11 | `04_代码/16_supplementary_tables.py 03_结果 <out.tex>`, `04_代码/17_figures.py` | Supplementary tables and paper figures |
 
 Shared modules: `nfv3_constraints.py` (constraint checks, splits) and `nfv3_projection.py` (attacker actions and projection).
 Seeds 0, 1, 2 control the split, training subsample, model initialisation and attack sampling.
