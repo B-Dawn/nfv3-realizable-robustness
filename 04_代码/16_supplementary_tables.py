@@ -261,6 +261,36 @@ for k, (op, ol) in enumerate(zip(OPS, OPL)):
                 w(f"{dl} & {m} & {'\\textsc{Strict}' if st == 'STRICT' else '\\textsc{Loose}'} & " + " & ".join(pm(r.loc[d, "分数型成功率"]) for d in DF) + "\\\\")
     w("\\bottomrule\\end{tabular}\\end{table*}")
 
+
+# ---------------- S9: ACK sensitivity ----------------
+import os
+if os.path.exists(R + "R_summary_ack.csv"):
+    K = pd.read_csv(R + "R_summary_ack.csv")
+    w("\\section{Sensitivity to Server Acknowledgments}\\label{sec:s-ack}")
+    w("Table~\\ref{tab:s-ack} repeats the score-based attack when each added TCP segment elicits one 40-byte pure acknowledgment "
+      "(ratio 1) or one per two segments (ratio 0.5), for flows whose server sends at least one packet. Backward packets and bytes, "
+      "the smallest packet length, the packet-length histogram, the server ACK flag, backward throughput and backward "
+      "inter-arrival times are updated accordingly; all reconstructed flows satisfy the constraints. Models, attack flows and random "
+      "draws are identical to the main experiment, and ratio 0 reproduces it exactly. Over all 216 cells (all operating points and "
+      "cost budgets) no success rate decreases by 0.01 or more. Values: mean $\\pm$ SD over three seeds, 1\\% FPR, $\\bar{c}\\le1$.")
+    g = K[(K["工作点"] == "FPR 1.0%") & (K["代价上限"] == "≤1×")]
+    w("\\begin{table}[!htbp]\\centering\\footnotesize\\caption{Evasion With Server Acknowledgments (Score-Based, 1\\% FPR, $\\bar{c}\\le1$)}\\label{tab:s-ack}")
+    w("\\begin{tabular}{@{}lll ccc@{}}\\toprule Data & Model & Setting & No ACK (main) & Ratio 0.5 & Ratio 1\\\\\\midrule")
+
+    def f(r, k):
+        m, sd = r[f"分数型均值|r{k}"], r[f"分数型标准差|r{k}"]
+        return f"{m:.3f}" if sd < 5e-4 else f"{m:.3f}\\,{{\\scriptsize$\\pm${sd:.3f}}}"
+    first = True
+    for ds, dl in DS.items():
+        if not first:
+            w("\\midrule")
+        first = False
+        for m in MODELS:
+            for st in ["STRICT", "LOOSE"]:
+                r = g[(g["源"] == ds) & (g["模型"] == m) & (g["设定"] == st)].iloc[0]
+                w(f"{dl} & {m} & {'\\textsc{Strict}' if st == 'STRICT' else '\\textsc{Loose}'} & {f(r, '0')} & {f(r, '0.5')} & {f(r, '1')}\\\\")
+    w("\\bottomrule\\end{tabular}\\end{table}")
+
 body = "\n".join(L)
 doc = r"""\documentclass[journal,onecolumn]{IEEEtran}
 \usepackage[T1]{fontenc}
